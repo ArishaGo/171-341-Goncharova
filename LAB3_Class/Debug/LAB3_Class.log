@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  LAB3_Class.cpp
+c:\users\арина\desktop\рабочий стол\языки программирования\lab1_class\lab3_class\lab3_class.cpp(210): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  LAB3_Class.vcxproj -> C:\Users\Арина\Desktop\Рабочий стол\Языки программирования\LAB1_Class\Debug\LAB3_Class.exe
+  LAB3_Class.vcxproj -> C:\Users\Арина\Desktop\Рабочий стол\Языки программирования\LAB1_Class\Debug\LAB3_Class.pdb (Full PDB)

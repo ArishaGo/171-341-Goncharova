@@ -1,0 +1,5 @@
+﻿  LAB_18_Class.cpp
+c:\users\арина\desktop\рабочий стол\языки программирования\lab1_class\lab_18_class\lab_18_class.cpp(43): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\арина\desktop\рабочий стол\языки программирования\lab1_class\lab_18_class\lab_18_class.cpp(51): warning C4101: mat33: неиспользованная локальная переменная
+  LAB_18_Class.vcxproj -> C:\Users\Арина\Desktop\Рабочий стол\Языки программирования\LAB1_Class\x64\Debug\LAB_18_Class.exe
+  LAB_18_Class.vcxproj -> C:\Users\Арина\Desktop\Рабочий стол\Языки программирования\LAB1_Class\x64\Debug\LAB_18_Class.pdb (Full PDB)

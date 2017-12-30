@@ -1,0 +1,9 @@
+﻿  stdafx.cpp
+  LAB13_Class.cpp
+c:\users\арина\desktop\рабочий стол\языки программирования\lab1_class\lab13_class\lab13_class.cpp(19): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+c:\users\арина\desktop\рабочий стол\языки программирования\lab1_class\lab13_class\lab13_class.cpp(52): warning C4244: return: преобразование "__int64" в "int", возможна потеря данных
+c:\users\арина\desktop\рабочий стол\языки программирования\lab1_class\lab13_class\lab13_class.cpp(65): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+c:\users\арина\desktop\рабочий стол\языки программирования\lab1_class\lab13_class\lab13_class.cpp(153): warning C4305: инициализация: усечение из "int" к "short"
+c:\users\арина\desktop\рабочий стол\языки программирования\lab1_class\lab13_class\lab13_class.cpp(153): warning C4309: инициализация: усечение константного значения
+  LAB13_Class.vcxproj -> C:\Users\Арина\Desktop\Рабочий стол\Языки программирования\LAB1_Class\Debug\LAB13_Class.exe
+  LAB13_Class.vcxproj -> C:\Users\Арина\Desktop\Рабочий стол\Языки программирования\LAB1_Class\Debug\LAB13_Class.pdb (Full PDB)

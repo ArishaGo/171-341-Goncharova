@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  LAB5_Class.cpp
+c:\users\арина\desktop\рабочий стол\языки программирования\lab1_class\lab5_class\lab5_class.cpp(49): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+c:\users\арина\desktop\рабочий стол\языки программирования\lab1_class\lab5_class\lab5_class.cpp(63): warning C4305: инициализация: усечение из "int" к "char"
+c:\users\арина\desktop\рабочий стол\языки программирования\lab1_class\lab5_class\lab5_class.cpp(63): warning C4309: инициализация: усечение константного значения
+c:\users\арина\desktop\рабочий стол\языки программирования\lab1_class\lab5_class\lab5_class.cpp(82): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+  LAB5_Class.vcxproj -> C:\Users\Арина\Desktop\Рабочий стол\Языки программирования\LAB1_Class\Debug\LAB5_Class.exe
+  LAB5_Class.vcxproj -> C:\Users\Арина\Desktop\Рабочий стол\Языки программирования\LAB1_Class\Debug\LAB5_Class.pdb (Full PDB)
