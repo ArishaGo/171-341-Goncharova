@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include "EXAM_STRING.h"
+#include <string>
 
 using namespace std;
 

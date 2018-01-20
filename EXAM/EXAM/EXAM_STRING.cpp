@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "EXAM_STRING.h"
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -48,7 +49,28 @@ char EXAM_STRING::insert(int i, char now) //запись элемента строки
 	}
 }
 
-int EXAM_STRING::num() //размер строки
+char EXAM_STRING::cut(int num, int col) // удаляет с заданной позиции заданное в параметрах количество символов и 
+                                        //уменьшает длину строки на указанное количество символов
+{
+	if (num + col <= size)
+	{
+		for (int i = num; i < (num + col); i++)
+		{
+			DynString[i] = ' ';
+		}
+		for (int i = num; i < (num + col); i++)
+		{
+			DynString[i] = DynString[i + col];
+			DynString[num + col] = '\0';
+		}
+	    }
+	else
+	{
+		return 0;
+	}
+	}
+
+int EXAM_STRING::raz() //размер строки
 {
 	return 0;
 }
@@ -73,7 +95,7 @@ for (int i = 0; i < size; i++)
 	DynString[i] = copy[i];
 }
 
-EXAM_STRING::EXAM_STRING(const std::string& copy) //копирование из std::string (конструктор2)
+/*EXAM_STRING::EXAM_STRING(const std::string& copy) //копирование из std::string (конструктор2)
 {
 //выделяем необходимый размер для работы
 MAX = copy.size();
@@ -86,7 +108,7 @@ for (int i = 0; i < copy.size(); i++);
 	DynString[i] = copy[i];
 }
 }
-
+*/
 
 void EXAM_STRING::print() //вывод строки
 {
