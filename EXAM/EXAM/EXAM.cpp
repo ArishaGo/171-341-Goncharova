@@ -5,9 +5,9 @@
 #include <iostream>
 #include "EXAM_STRING.h"
 #include <string>
+#include "EXAM_STRING.h" 
 
 using namespace std;
-
 
 
 int main()
@@ -16,7 +16,7 @@ int main()
 
 	while (1)
 	{
-		for (int i = 0; i < 1000; ++i)
+		for (int i = 0; i < 10000; ++i)
 		{
 			STROCA1.add('a');
 		}
