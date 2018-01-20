@@ -16,9 +16,9 @@ EXAM_STRING::EXAM_STRING() //создается класс строк
 
 EXAM_STRING::EXAM_STRING(const EXAM_STRING& other) //создание строки
 {
-	a = other.a;
-	DynString = new char[a];
-	for (int i = 1; i < a; i++)
+	size = other.size;
+	DynString = new char[size];
+	for (int i = 1; i < size; i++)
 	{
 		DynString[i] = other.DynString[i];
 	}
@@ -26,7 +26,7 @@ EXAM_STRING::EXAM_STRING(const EXAM_STRING& other) //создание строки
 
 char EXAM_STRING::get(int i) //чтение строки
 {
-	if ((DynString != 0) && (i < a))
+	if ((DynString != 0) && (i < size))
 	{
 		return DynString[i];
 	}
@@ -36,9 +36,9 @@ char EXAM_STRING::get(int i) //чтение строки
 	}
 }
 
-char EXAM_STRING::set(int i, char now) //запись элемента строки
+char EXAM_STRING::insert(int i, char now) //запись элемента строки
 {
-	if ((DynString != 0) && (i < a))
+	if ((DynString != 0) && (i < size))
 	{
 		DynString[i] = now;
 	}
@@ -53,9 +53,44 @@ int EXAM_STRING::num() //размер строки
 	return 0;
 }
 
+EXAM_STRING::EXAM_STRING(const char* copy) //копирование из массива char
+{
+size = 0;
+
+//вычисляем длинку исходной строки
+
+while (copy[size] != 0)
+{
+	size++;
+}
+MAX = size;
+DynString = new char[MAX];
+
+//копируем исходную строку
+
+for (int i = 0; i < size; i++)
+
+	DynString[i] = copy[i];
+}
+
+EXAM_STRING::EXAM_STRING(const std::string& copy) //копирование из std::string (конструктор2)
+{
+//выделяем необходимый размер для работы
+MAX = copy.size();
+size = MAX;
+DynString = new char [MAX];
+
+//копируем исходную строку
+for (int i = 0; i < copy.size(); i++);
+{
+	DynString[i] = copy[i];
+}
+}
+
+
 void EXAM_STRING::print() //вывод строки
 {
-	for (int i = 0; i < a; i++)
+	for (int i = 0; i < size; i++)
 	{
 		cout << get(i) << " ";
 	}
@@ -63,12 +98,12 @@ void EXAM_STRING::print() //вывод строки
 
 void EXAM_STRING::add(char j) //добавление элемента в конец строки
 {
-	if (a + 1 > MAX)
+	if (size + 1 > MAX)
 	{
 		grow();
 	}
-	DynString[a] = j;
-	a = a + 1;
+	DynString[size] = j;
+	size = size + 1;
 }
 
 void EXAM_STRING::grow()//увеличение размера строки
@@ -86,9 +121,9 @@ void EXAM_STRING::grow()//увеличение размера строки
 	MAX = 2 * MAX + 1;
 }
 
-void EXAM_STRING::del()//очищение строки
+void EXAM_STRING::clear()//очищение строки
 {
-	a = 0;
+	size = 0;
 }
 
 EXAM_STRING::~EXAM_STRING()

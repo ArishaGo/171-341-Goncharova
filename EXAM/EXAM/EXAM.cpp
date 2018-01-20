@@ -21,7 +21,7 @@ int main()
 		}
 		STROCA1.print();
 		cout << endl;
-		STROCA1.del();
+		STROCA1.clear();
 	}
 	STROCA1.add('b');
 	STROCA1.print();
